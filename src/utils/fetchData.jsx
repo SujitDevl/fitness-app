@@ -1,5 +1,3 @@
-export default exerciseOptions;
-
 export const exerciseOptions = {
   method: 'GET',
   headers: {
