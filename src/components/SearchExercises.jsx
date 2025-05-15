@@ -20,7 +20,18 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
       } catch (error) {
         console.error("Error fetching body parts:", error);
         // Set default body parts in case of API failure
-        setBodyParts(["all", "back", "cardio", "chest", "lower arms", "lower legs", "shoulders", "upper arms", "upper legs", "waist"]);
+        setBodyParts([
+          "all",
+          "back",
+          "cardio",
+          "chest",
+          "lower arms",
+          "lower legs",
+          "shoulders",
+          "upper arms",
+          "upper legs",
+          "waist",
+        ]);
       }
     };
 
@@ -55,9 +66,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
     }
   };
 
-  
   const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       handleSearch();
     }
   };
