@@ -15,6 +15,7 @@
     "@mui/material": "^7.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-horizontal-scrolling-menu": "^7.1.1",
     "react-router-dom": "^7.5.3",
     "vite-plugin-env-compatible": "^2.0.1"
   },
