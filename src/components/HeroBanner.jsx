@@ -43,7 +43,7 @@ const HeroBanner = () => {
         fontFamily="sans-serif"
       >
         Transform your body and strength with the most <br />
-        effective workout training.
+        effective workout training..
       </Typography>
 
       <Button
