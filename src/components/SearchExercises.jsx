@@ -19,7 +19,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         setBodyParts(["all", ...(bodyPartsData || [])]);
       } catch (error) {
         console.error("Error fetching body parts:", error);
-        // Set default body parts in case of API failure
+        // Set default body parts in case of API failure..
         setBodyParts([
           "all",
           "back",
