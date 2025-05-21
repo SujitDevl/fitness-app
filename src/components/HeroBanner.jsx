@@ -33,7 +33,7 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
       >
-        Drive! Discipline! Domination!
+        Drive. Discipline. Domination.
       </Typography>
       <Typography
         fontSize="18px"
