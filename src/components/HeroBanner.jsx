@@ -15,7 +15,7 @@ const HeroBanner = () => {
     >
       <Typography
         color="#808080"
-        fontWeight="950"
+        fontWeight="950" 
         fontSize="80px"
         sx={{
           opacity: "0.3",
