@@ -10,29 +10,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   useEffect(() => {
     const fetchExercisesData = async () => {
-      try {
-        const bodyPartsData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
-          exerciseOptions
-        );
+      const bodyPartsData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        exerciseOptions
+      );
 
-        setBodyParts(["all", ...(bodyPartsData || [])]);
-      } catch (error) {
-        console.error("Error fetching body parts:", error);
-        // Set default body parts in case of API failure..
-        setBodyParts([
-          "all",
-          "back",
-          "cardio",
-          "chest",
-          "lower arms",
-          "lower legs",
-          "shoulders",
-          "upper arms",
-          "upper legs",
-          "waist",
-        ]);
-      }
+      setBodyParts(["all", ...bodyPartsData]);
     };
 
     fetchExercisesData();
@@ -40,35 +23,23 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   const handleSearch = async () => {
     if (search) {
-      try {
-        const exercisesData = await fetchData(
-          "https://exercisedb.p.rapidapi.com/exercises",
-          exerciseOptions
-        );
+      const exercisesData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises",
+        exerciseOptions
+      );
 
-        const searchedExercises = exercisesData.filter(
-          (item) =>
-            item.name.toLowerCase().includes(search) ||
-            item.target.toLowerCase().includes(search) ||
-            item.equipment.toLowerCase().includes(search) ||
-            item.bodyPart.toLowerCase().includes(search)
-        );
+      const searchedExercises = exercisesData.filter(
+        (item) =>
+          item.name.toLowerCase().includes(search) ||
+          item.target.toLowerCase().includes(search) ||
+          item.equipment.toLowerCase().includes(search) ||
+          item.bodyPart.toLowerCase().includes(search)
+      );
 
-        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
+      window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
 
-        setSearch("");
-        setExercises(searchedExercises);
-      } catch (error) {
-        console.error("Error searching exercises:", error);
-        // Handle API error gracefully
-        alert("Error searching exercises. Please try again later.");
-      }
-    }
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      handleSearch();
+      setSearch("");
+      setExercises(searchedExercises);
     }
   };
 
@@ -95,7 +66,6 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Search Exercises"
           type="text"
-          onKeyPress={handleKeyPress}
         />
         <Button
           className="search-btn"
@@ -115,14 +85,12 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </Button>
       </Box>
       <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
-        {bodyParts.length > 0 && (
-          <HorizontalScrollbar
-            data={bodyParts}
-            bodyParts={true}
-            setBodyPart={setBodyPart}
-            bodyPart={bodyPart}
-          />
-        )}
+        <HorizontalScrollbar
+          data={bodyParts}
+          bodyParts
+          setBodyPart={setBodyPart}
+          bodyPart={bodyPart}
+        />
       </Box>
     </Stack>
   );
