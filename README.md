@@ -1,7 +1,3 @@
-Here’s your updated README for **GO Beast** — your fitness app, now themed with **Drive, Discipline, and Domination** as the core pillars. No icons, and written in a modern 2025 tone:
-
----
-
 # GO Beast — Drive. Discipline. Domination.
 
 Welcome to **GO Beast** — a fitness web app built to fuel your transformation. Whether you're a beginner or a beast in training, this app brings you closer to your goals with clean design, powerful features, and real-time data.
