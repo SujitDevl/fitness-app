@@ -42,7 +42,7 @@ const ExerciseCard = ({ exercise }) => (
     >
       {exercise.name}
     </Typography>
-  </Link>   
+  </Link>      
 );
 
 export default ExerciseCard;
