@@ -32,10 +32,10 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
     {data.map((item) => (
       <Box
         key={item.id || item}
-        itemId={item.id || item} // Needed by ScrollMenu
+        itemId={item.id || item} 
         title={item.id || item}
         m="0 40px"
-        component="div" // Ensures it's rendered as div
+        component="div" 
       >
         {bodyParts ? (
           <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
