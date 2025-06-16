@@ -40,7 +40,11 @@ const Navbar = () => {
         </Link>
         <a
           href="#excerises"
-          style={{ fontFamily:'Arial', textDecoration: "none", color: "#808080" }}
+          style={{
+            fontFamily: "Arial",
+            textDecoration: "none",
+            color: "#808080",
+          }}
         >
           Exercises
         </a>

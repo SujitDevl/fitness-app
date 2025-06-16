@@ -8,7 +8,7 @@ import RightArrowIcon from "../assets/icons/right-arrow.png";
 import LeftArrowIcon from "../assets/icons/left-arrow.png";
 
 const LeftArrow = () => {
-  const { scrollPrev } = useContext( VisibilityContext );
+  const { scrollPrev } = useContext(VisibilityContext);
 
   return (
     <Typography onClick={() => scrollPrev()} className="right-arrow">
@@ -18,7 +18,7 @@ const LeftArrow = () => {
 };
 
 const RightArrow = () => {
-  const { scrollNext } = useContext( VisibilityContext );
+  const { scrollNext } = useContext(VisibilityContext);
 
   return (
     <Typography onClick={() => scrollNext()} className="left-arrow">
@@ -32,10 +32,10 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
     {data.map((item) => (
       <Box
         key={item.id || item}
-        itemId={item.id || item} 
+        itemId={item.id || item}
         title={item.id || item}
         m="0 40px"
-        component="div" 
+        component="div"
       >
         {bodyParts ? (
           <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
