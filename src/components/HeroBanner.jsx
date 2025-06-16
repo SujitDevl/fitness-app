@@ -58,7 +58,7 @@ const HeroBanner = () => {
         fontWeight={600}
         color="grey"
         sx={{
-          opacity: 0.1,
+          opacity: 0.2,
           display: { lg: "block", xs: "none" },
         }}
         fontSize="190px"
