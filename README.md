@@ -39,7 +39,7 @@ To run GO Beast locally:
 
 ```bash
 git clone https://github.com/your-username/go-beast.git
-cd go-beast
+
 npm install
 npm start
 ```
