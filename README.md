@@ -41,7 +41,7 @@ To run GO Beast locally:
 git clone https://github.com/your-username/go-beast.git
 
 npm install
-npm start
+npm run dev
 ```
 
 ## Final Words
