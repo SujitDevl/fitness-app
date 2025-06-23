@@ -1,10 +1,10 @@
 # GO Beast — Drive. Discipline. Domination.
 
-Welcome to **GO Beast** — a fitness web app built to fuel your transformation. Whether you're a beginner or a beast in training, this app brings you closer to your goals with clean design, powerful features, and real-time data.
+Welcome to GO Beast, a fitness web app built to fuel your transformation. Whether you're a beginner or a beast in training, this app brings you closer to your goals with its clean design, powerful features, and real-time data.
 
 ## About the Project
 
-**GO Beast** is a frontend project crafted using **React**, **Material UI**, and modern **ES6+ JavaScript**. It’s fast, responsive, and made with the mindset of **Drive, Discipline, and Domination** — the three core principles behind every powerful workout.
+** GO Beast ** is a front-end project crafted using ** React **, ** Material UI **, and modern ** ES6+ JavaScript **. It’s fast and responsive and made with the mindset of **Drive, Discipline, and Domination**—the three core principles behind every powerful workout.
 
 ## What It Offers
 
