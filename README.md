@@ -44,10 +44,6 @@ npm install
 npm run dev
 ```
 
-## Final Words
-
-**Drive. Discipline. Domination.**
-This app represents more than just code — it's a reminder to show up, push hard, and stay consistent.
 
 Let me know if you'd like to connect, contribute, or just talk tech + training.
 
