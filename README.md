@@ -33,17 +33,6 @@ This app is about more than workouts — it’s about mindset.
 * Modular components and clean code architecture
 * Fully responsive design across screens
 
-## Getting Started
-
-To run GO Beast locally:
-
-```bash
-git clone https://github.com/your-username/go-beast.git
-
-npm install
-npm run dev
-```
-
 
 Let me know if you'd like to connect, contribute, or just talk tech + training.
 
