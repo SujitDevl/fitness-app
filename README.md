@@ -31,7 +31,7 @@ This app is about more than workouts — it’s about mindset.
 * Dynamic search with filtering by body parts or equipment
 * Smooth pagination for browsing exercises
 * Modular components and clean code architecture
-* Fully responsive design across screens
+* Fully responsive design across screens.
 
 
 Let me know if you'd like to connect, contribute, or just talk tech + training.
